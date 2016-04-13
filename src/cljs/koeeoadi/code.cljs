@@ -550,227 +550,537 @@
                                      ,:code-chunk/line-chunk 31001}
                                     ]}
 
-   "emacs-lisp" {:code/name "emacs-lisp"
-                 :code-chunks/list [{:code-chunk/face
-                                     [:faces/by-name "comment-delimiter"]
-                                     ,:code-chunk/string ";",:code-chunk/line-chunk 1001}
-                                    {:code-chunk/face [:faces/by-name "comment-delimiter"],:code-chunk/string
-                                     "; "
-                                     ,:code-chunk/line-chunk 1002}
-                                    {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
-                                     "Sieve of Eratosthenes"
-                                     ,:code-chunk/line-chunk 1003}
-                                    {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 1004}
-                                    {:code-chunk/face [:faces/by-name "comment-delimiter"],:code-chunk/string
-                                     ";"
-                                     ,:code-chunk/line-chunk 2001}
-                                    {:code-chunk/face [:faces/by-name "comment-delimiter"],:code-chunk/string
-                                     "; "
-                                     ,:code-chunk/line-chunk 2002}
-                                    {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
-                                     "https://rosettacode.org/wiki/Sieve_of_Eratosthenes#Emacs_Lis"
-                                     ,:code-chunk/line-chunk 2003}
-                                    {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
-                                     "p"
-                                     ,:code-chunk/line-chunk 2004}
-                                    {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 2005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 3001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 4001}
-                                    {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
-                                     "defun"
-                                     ,:code-chunk/line-chunk 4002}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     " "
-                                     ,:code-chunk/line-chunk 4003}
-                                    {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
-                                     "sieve"
-                                     ,:code-chunk/line-chunk 4004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     " "
-                                     ,:code-chunk/line-chunk 4005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 4006}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "limit"
-                                     ,:code-chunk/line-chunk 4007}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 4008}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 4009}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "  "
-                                     ,:code-chunk/line-chunk 5001}
-                                    {:code-chunk/face [:faces/by-name "doc"],:code-chunk/string
-                                     "\"Finds the primes between 2 and the given LIMIT."
-                                     ,:code-chunk/line-chunk 5002}
-                                    {:code-chunk/face [:faces/by-name "doc"],:code-chunk/string
-                                     "\""
-                                     ,:code-chunk/line-chunk 5003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 5004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "  "
-                                     ,:code-chunk/line-chunk 6001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 6002}
-                                    {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
-                                     "let"
-                                     ,:code-chunk/line-chunk 6003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     " "
-                                     ,:code-chunk/line-chunk 6004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 6005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 6006}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "xs "
-                                     ,:code-chunk/line-chunk 6007}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 6008}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "vconcat "
-                                     ,:code-chunk/line-chunk 6009}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "["
-                                     ,:code-chunk/line-chunk 6010}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "0 0"
-                                     ,:code-chunk/line-chunk 6011}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "]"
-                                     ,:code-chunk/line-chunk 6012}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     " "
-                                     ,:code-chunk/line-chunk 6013}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 6014}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "number-sequence 2 limit"
-                                     ,:code-chunk/line-chunk 6015}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 6016}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 6017}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 6018}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 6019}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 6020}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "    "
-                                     ,:code-chunk/line-chunk 7001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 7002}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "loop for i from 2 to "
-                                     ,:code-chunk/line-chunk 7003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 7004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "sqrt limit"
-                                     ,:code-chunk/line-chunk 7005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 7006}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "          when "
-                                     ,:code-chunk/line-chunk 8001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 8002}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "aref xs i"
-                                     ,:code-chunk/line-chunk 8003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 8004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "          do "
-                                     ,:code-chunk/line-chunk 9001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 9002}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "loop for m from "
-                                     ,:code-chunk/line-chunk 9003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 9004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "* i i"
-                                     ,:code-chunk/line-chunk 9005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ") to limit by i"
-                                     ,:code-chunk/line-chunk 9006}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "                   do "
-                                     ,:code-chunk/line-chunk 10001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 10002}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "aset xs m 0"
-                                     ,:code-chunk/line-chunk 10003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 10004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 10005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 10006}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 10007}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "    "
-                                     ,:code-chunk/line-chunk 11001}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "("
-                                     ,:code-chunk/line-chunk 11002}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     "remove 0 xs"
-                                     ,:code-chunk/line-chunk 11003}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 11004}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 11005}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ")"
-                                     ,:code-chunk/line-chunk 11006}
-                                    {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
-                                     ""
-                                     ,:code-chunk/line-chunk 11007}
-                                    ]}
+   "clojure" {:code/name "clojure"
+              :code-chunks/list [{:code-chunk/face
+                                  [:faces/by-name "comment-delimiter"]
+                                  ,:code-chunk/string ";; ",:code-chunk/line-chunk 1001}
+                                 {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
+                                  "Sieve of Eratosthenes"
+                                  ,:code-chunk/line-chunk 1002}
+                                 {:code-chunk/face [:faces/by-name "comment-delimiter"],:code-chunk/string
+                                  ";; "
+                                  ,:code-chunk/line-chunk 2001}
+                                 {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
+                                  "https://rosettacode.org/wiki/Sieve_of_Eratosthenes#Clojure"
+                                  ,:code-chunk/line-chunk 2002}
+                                 {:code-chunk/face [:faces/by-name "comment"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 2003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 3001}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "ns"
+                                  ,:code-chunk/line-chunk 3002}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 3003}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "s"
+                                  ,:code-chunk/line-chunk 3004}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "i"
+                                  ,:code-chunk/line-chunk 3005}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "e"
+                                  ,:code-chunk/line-chunk 3006}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "v"
+                                  ,:code-chunk/line-chunk 3007}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "e"
+                                  ,:code-chunk/line-chunk 3008}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "."
+                                  ,:code-chunk/line-chunk 3009}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "c"
+                                  ,:code-chunk/line-chunk 3010}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "o"
+                                  ,:code-chunk/line-chunk 3011}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "r"
+                                  ,:code-chunk/line-chunk 3012}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "e"
+                                  ,:code-chunk/line-chunk 3013}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 3014}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 3015}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 4001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 5001}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "defn"
+                                  ,:code-chunk/line-chunk 5002}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 5003}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "primes-to"
+                                  ,:code-chunk/line-chunk 5004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 5005}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "  "
+                                  ,:code-chunk/line-chunk 6001}
+                                 {:code-chunk/face [:faces/by-name "doc"],:code-chunk/string
+                                  "\"Computes lazy sequence of prime numbers up to a given number\""
+                                  ,:code-chunk/line-chunk 6002}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 6003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "  "
+                                  ,:code-chunk/line-chunk 7001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "["
+                                  ,:code-chunk/line-chunk 7002}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "n"
+                                  ,:code-chunk/line-chunk 7003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "]"
+                                  ,:code-chunk/line-chunk 7004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 7005}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "  "
+                                  ,:code-chunk/line-chunk 8001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 8002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "let"
+                                  ,:code-chunk/line-chunk 8003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 8004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "["
+                                  ,:code-chunk/line-chunk 8005}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "root "
+                                  ,:code-chunk/line-chunk 8006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 8007}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "->"
+                                  ,:code-chunk/line-chunk 8008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " n "
+                                  ,:code-chunk/line-chunk 8009}
+                                 {:code-chunk/face [:faces/by-name "type"],:code-chunk/string
+                                  "Math"
+                                  ,:code-chunk/line-chunk 8010}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "/"
+                                  ,:code-chunk/line-chunk 8011}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "sqrt "
+                                  ,:code-chunk/line-chunk 8012}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "long"
+                                  ,:code-chunk/line-chunk 8013}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 8014}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ","
+                                  ,:code-chunk/line-chunk 8015}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "        cmpsts "
+                                  ,:code-chunk/line-chunk 9001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 9002}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "boolean-array"
+                                  ,:code-chunk/line-chunk 9003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 9004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 9005}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "inc"
+                                  ,:code-chunk/line-chunk 9006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " n"
+                                  ,:code-chunk/line-chunk 9007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 9008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 9009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ","
+                                  ,:code-chunk/line-chunk 9010}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "        cullp "
+                                  ,:code-chunk/line-chunk 10001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 10002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "fn"
+                                  ,:code-chunk/line-chunk 10003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 10004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "["
+                                  ,:code-chunk/line-chunk 10005}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "p"
+                                  ,:code-chunk/line-chunk 10006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "]"
+                                  ,:code-chunk/line-chunk 10007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "                "
+                                  ,:code-chunk/line-chunk 11001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 11002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "loop"
+                                  ,:code-chunk/line-chunk 11003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 11004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "["
+                                  ,:code-chunk/line-chunk 11005}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "i "
+                                  ,:code-chunk/line-chunk 11006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 11007}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "*"
+                                  ,:code-chunk/line-chunk 11008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " p p"
+                                  ,:code-chunk/line-chunk 11009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 11010}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "]"
+                                  ,:code-chunk/line-chunk 11011}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "                  "
+                                  ,:code-chunk/line-chunk 12001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 12002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "if"
+                                  ,:code-chunk/line-chunk 12003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 12004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 12005}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "<="
+                                  ,:code-chunk/line-chunk 12006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " i n"
+                                  ,:code-chunk/line-chunk 12007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 12008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "                    "
+                                  ,:code-chunk/line-chunk 13001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 13002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "do"
+                                  ,:code-chunk/line-chunk 13003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 13004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 13005}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "aset"
+                                  ,:code-chunk/line-chunk 13006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " cmpsts i "
+                                  ,:code-chunk/line-chunk 13007}
+                                 {:code-chunk/face [:faces/by-name "constant"],:code-chunk/string
+                                  "true"
+                                  ,:code-chunk/line-chunk 13008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 13009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "                        "
+                                  ,:code-chunk/line-chunk 14001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 14002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "recur"
+                                  ,:code-chunk/line-chunk 14003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 14004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 14005}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "+"
+                                  ,:code-chunk/line-chunk 14006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " i p"
+                                  ,:code-chunk/line-chunk 14007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 14008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 14009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 14010}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 14011}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 14012}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 14013}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "]"
+                                  ,:code-chunk/line-chunk 14014}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "    "
+                                  ,:code-chunk/line-chunk 15001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15002}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "do"
+                                  ,:code-chunk/line-chunk 15003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 15004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15005}
+                                 {:code-chunk/face [:faces/by-name "keyword"],:code-chunk/string
+                                  "dorun"
+                                  ,:code-chunk/line-chunk 15006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 15007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15008}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "map"
+                                  ,:code-chunk/line-chunk 15009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " #"
+                                  ,:code-chunk/line-chunk 15010}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15011}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "cullp "
+                                  ,:code-chunk/line-chunk 15012}
+                                 {:code-chunk/face [:faces/by-name "variable-name"],:code-chunk/string
+                                  "%"
+                                  ,:code-chunk/line-chunk 15013}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 15014}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 15015}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15016}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "filter"
+                                  ,:code-chunk/line-chunk 15017}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " #"
+                                  ,:code-chunk/line-chunk 15018}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15019}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "not"
+                                  ,:code-chunk/line-chunk 15020}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 15021}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 15022}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "aget"
+                                  ,:code-chunk/line-chunk 15023}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " cmpsts "
+                                  ,:code-chunk/line-chunk 15024}
+                                 {:code-chunk/face [:faces/by-name "variable-name"],:code-chunk/string
+                                  "%"
+                                  ,:code-chunk/line-chunk 15025}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 15026}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 15027}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 15028}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "                                       "
+                                  ,:code-chunk/line-chunk 16001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 16002}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "range"
+                                  ,:code-chunk/line-chunk 16003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " 2 "
+                                  ,:code-chunk/line-chunk 16004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 16005}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "inc"
+                                  ,:code-chunk/line-chunk 16006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " root"
+                                  ,:code-chunk/line-chunk 16007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 16008}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 16009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 16010}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 16011}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 16012}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 16013}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "        "
+                                  ,:code-chunk/line-chunk 17001}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 17002}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "filter"
+                                  ,:code-chunk/line-chunk 17003}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " #"
+                                  ,:code-chunk/line-chunk 17004}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 17005}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "not"
+                                  ,:code-chunk/line-chunk 17006}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 17007}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 17008}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "aget"
+                                  ,:code-chunk/line-chunk 17009}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " cmpsts "
+                                  ,:code-chunk/line-chunk 17010}
+                                 {:code-chunk/face [:faces/by-name "variable-name"],:code-chunk/string
+                                  "%"
+                                  ,:code-chunk/line-chunk 17011}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17012}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17013}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " "
+                                  ,:code-chunk/line-chunk 17014}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 17015}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "range"
+                                  ,:code-chunk/line-chunk 17016}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " 2 "
+                                  ,:code-chunk/line-chunk 17017}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  "("
+                                  ,:code-chunk/line-chunk 17018}
+                                 {:code-chunk/face [:faces/by-name "function-name"],:code-chunk/string
+                                  "inc"
+                                  ,:code-chunk/line-chunk 17019}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  " n"
+                                  ,:code-chunk/line-chunk 17020}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17021}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17022}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17023}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17024}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17025}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ")"
+                                  ,:code-chunk/line-chunk 17026}
+                                 {:code-chunk/face [:faces/by-name "default"],:code-chunk/string
+                                  ""
+                                  ,:code-chunk/line-chunk 17027}]}
+
+   
 
    "c" {:code/name "c"
         :code-chunks/list [{:code-chunk/face
