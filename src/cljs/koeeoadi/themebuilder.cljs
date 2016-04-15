@@ -1,6 +1,6 @@
 (ns koeeoadi.themebuilder
   (:require [koeeoadi.reconciler :refer [reconciler]]
-            [koeeoadi.util :refer [dark?]]
+            [koeeoadi.util :refer [firefox-fix dark?]]
             [cljs.reader :as reader]))
 
 ;;; General
@@ -87,7 +87,7 @@
          faces-by-name      :faces/by-name
          user-faces-by-name :user-faces/by-name} @reconciler
         face-specs   (xform-faces-emacs faces-by-name user-faces-by-name)]
-    (emacs-theme face-specs)))
+    (firefox-fix (str (emacs-theme face-specs)))))
 
 ;;; VIM
 (defn vim-set-bg [hex]
@@ -173,11 +173,12 @@
                      :color/hex
                      vim-set-bg)
         face-specs (vim-xform-faces)]
-    (clojure.string/join "%0A"
-      (concat
-        [(vim-theme-title)
-         ""
-         set-bg
-         ""]
-        vim-highlight-init
-        face-specs))))
+    (firefox-fix (clojure.string/join "%0A"
+                   (concat
+                     [(vim-theme-title)
+                      ""
+                      set-bg
+                      ""]
+                     vim-highlight-init
+                     face-specs)))))
+

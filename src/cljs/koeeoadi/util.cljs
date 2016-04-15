@@ -1,5 +1,6 @@
 (ns koeeoadi.util
-  (:require [cljs.reader :refer [read-string]]
+  (:require [clojure.string :refer [replace]]
+            [cljs.reader :refer [read-string]]
             [goog.dom :refer [getElement getElementsByTagNameAndClass]]
             [goog.style :refer [getClientPosition getPageOffset]]
             [goog.array :refer [forEach]]
@@ -16,7 +17,7 @@
    :face/bold
    :face/italic
    :face/underline
-   :face/editor 
+   :face/editor
    {:face/color-fg shared-color-query}
    {:face/color-bg shared-color-query}])
 
@@ -122,3 +123,6 @@
   (hash-map
     :bg-faces (map :face/name (filter #(= color-id (last (:face/color-bg %))) faces))
     :fg-faces (map :face/name (filter #(= color-id (last (:face/color-fg %))) faces))))
+
+(defn firefox-fix [s]
+  (replace s #"#" "%23"))
