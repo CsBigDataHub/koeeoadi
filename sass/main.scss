@@ -506,13 +506,6 @@ button, div, span, td, th {
 .face {
     padding: 2px 2px 2px 5px;
     position: relative;
-
-    > i {
-        position: absolute;
-        top: 0px;
-        right: 5px;
-        color: $grayLight;
-    }
 }
 
 #user-face-map-button {
@@ -521,13 +514,20 @@ button, div, span, td, th {
 }
 
 .face-name {
+    cursor: pointer;
     box-sizing: border-box;
-
-    padding-top: 3px;
-    font-size: 1em;
     vertical-align: middle;
-    display: inline-block;
-    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    left: $colorInputSize * 3;
+    top: 3px;
+
+    > i {
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        color: $grayLight;
+    }
 }
 
 .face-styles {

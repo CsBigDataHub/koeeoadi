@@ -24,6 +24,14 @@
     (and (= name "default")
       (= :face/color-bg color-type))))
 
+(defn face-update [comp prop e]
+  (let [name    (:face/name (om/props comp))
+        checked (util/target-checked e)]
+    (om/transact! comp
+      `[(state/update-ref {:mutate/name face/update
+                           :props {:face/name   ~name
+                                   ~prop        ~checked}}) :code])))
+
 (defn face-color [comp color-type]
   (let [{:keys [face/name] :as props} (om/props comp)
         {hex :color/hex}              (color-type props)
@@ -36,14 +44,6 @@
            :onClick   (if-not disabled? #(util/color-picker-show (color-picker-comp) (om/props comp) color-type %) #(do))
            :style     #js {:backgroundColor hex}
            :tabIndex  (when-not disabled? "0")})))
-
-(defn face-update [comp prop e]
-  (let [name    (:face/name (om/props comp))
-        checked (util/target-checked e)]
-    (om/transact! comp
-      `[(state/update-ref {:mutate/name face/update
-                           :props {:face/name   ~name
-                                   ~prop        ~checked}}) :code])))
 
 (defn face-style [comp prop]
   (dom/li nil
@@ -75,7 +75,7 @@
   Object
   (render [this]
     (let [{id          :face/id
-           name   :face/name
+           name        :face/name
            active-face :face/active-face
            :as props}           (om/props this)
           active?               (= name active-face)
@@ -85,9 +85,9 @@
         (face-color this :face/color-bg)
         (face-color this :face/color-fg)
         (dom/div #js {:className "face-name"
-                      :onClick   #(om/transact! (faces-comp) `[(state/merge {:face/active-face ~name})])}
-          name)
-        (dom/i #js {:className icon-classes})
+                      :onClick   #(om/transact! (faces-comp) `[(state/merge {:face/active-face ~(if active? nil name)})])}
+          name
+          (dom/i #js {:className icon-classes}))
         (when active?
           (face-styles this))))))
 
