@@ -60,10 +60,10 @@
   (let [selectors (map #(face-to-selectors % color-type) faces)
         cnt (count selectors)]
     (cond
-      (= count 0)
+      (= cnt 0)
       [nil nil]
 
-      (= count 1 (count faces))
+      (= cnt 1)
       (first selectors)
 
       :else (reduce #(vector
@@ -135,11 +135,9 @@
             color-editable-selector (str ".color-" (:color/id active-color))
             [code-bg-selector face-bg-color-selector] (selectors-for-colorize bg-faces :face/color-bg)
             [code-fg-selector face-fg-color-selector] (selectors-for-colorize fg-faces :face/color-fg)
-            bg-selectors  (clojure.string/join "," (remove nil? [color-editable-selector code-bg-selector face-bg-color-selector face-fg-color-selector]))
-            fg-selectors   (clojure.string/join "," (remove nil? [code-fg-selector]))]
-
+            bg-selectors  (clojure.string/join "," (remove nil? [color-editable-selector code-bg-selector face-bg-color-selector face-fg-color-selector]))]
         (colorize-faces bg-selectors "background-color" hex-temp)
-        (colorize-faces fg-selectors "color" hex-temp)))))
+        (when code-fg-selector (colorize-faces code-fg-selector "color" hex-temp))))))
 
 (defui PaletteWidget
   static om/IQuery
