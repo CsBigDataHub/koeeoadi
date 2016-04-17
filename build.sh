@@ -26,6 +26,7 @@ git add .
 git commit -m 'Meaningless commit for gh-pages'
 git config branch.gh-pages.pushRemote origin
 git push -v --force-with-lease origin gh-pages:refs/heads/gh-pages
+git checkout master
 
 # Remove this script
 rm -- "$0"
