@@ -83,7 +83,7 @@
               (om/transact! this `[(state/merge
                                      {:palette-widget/face-classes-by-color-type ~faces-to-colorize
                                       :mutate/name face/color-update
-                                      :faces/by-name ~faces-by-name'})])))
+                                      :faces/by-name ~faces-by-name'}) :palette])))
 
           color-update
           (fn [color]
