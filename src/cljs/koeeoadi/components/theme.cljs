@@ -28,22 +28,22 @@
   (let [input (util/target-value e)]
     (om/update-state! comp assoc :name-temp input)))
 
+
 (defn select-theme [comp e]
-  (let [{theme-map    :theme/map
-         active-color :palette-widget/active-color} (om/props comp)
-        theme-name (util/target-value e)]
-    (om/transact! comp `[(state/merge
+  (let [{theme-map    :theme/map} (om/props comp)
+        theme-name   (util/target-value e)
+        active-color (first (get-in theme-map [theme-name :colors/list]))]
+    (om/transact! comp `[(theme/change
                            ~(assoc (get theme-map theme-name)
                               :theme/name
                               theme-name
 
-                              :mutate/name
-                              'theme/select
+                              :palette-widget/active-color active-color
 
                               :palette-widget/face-classes-by-color-type
                               (util/faces-to-colorize
                                 (get-in theme-map [theme-name :faces/list])
-                                (:color-id active-color))))
+                                (last active-color))))
                          :theme/map])))
 
 (defn new-theme [comp]
