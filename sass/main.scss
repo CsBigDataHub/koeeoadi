@@ -5,8 +5,7 @@ $grayLighter: #cccccc;
 $grayLight: #9e9e9e;
 $gray: #333333;
 $grayDark: #292929;
-$grayDarker: #202020;
-$grayDarkest: #1a1a1a;
+$grayDarker: #202020; $grayDarkest: #1a1a1a;
 $backgroundColor: $grayDarker;
 
 /* General Properties */
@@ -358,7 +357,6 @@ button, div, span, td, th {
     border-radius: 0;
     box-sizing: border-box;
     font: normal 1.25em Menlo,Monaco,Consolas,"Courier New",monospace;
-    z-index: 0;
 }
 
 .code-line {
